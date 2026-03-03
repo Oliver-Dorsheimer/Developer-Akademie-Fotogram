@@ -21,12 +21,13 @@
     <main>
         <div class = "main_content_limitation">
             <h1>Your personal photo album</h1>
-            <div id = "foto_container" onload = "create_images">
+            <div id = "foto_container" onload = "render_images()">
 
             </div>
         </div>
     </main>
     <footer>
+        <button onclick="render_images()">Try it</button>
         <div class = "footer_content_limitation">
             <div class = "footer_logo">
                 <img class = "footer_logo_icon" src="icons/footer_logo.svg">
