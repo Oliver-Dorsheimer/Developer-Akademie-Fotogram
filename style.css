@@ -88,9 +88,11 @@ header {
     margin-right: 16px;
 }
 
-/*main {
+main {
+    display: flex;
+    justify-content: center;
     
-}*/
+}
 
 .main_content {
     max-width: 1440px;
