@@ -9,6 +9,36 @@
 ##############################################################                                Global                                           ####################################################################################
 #################################################################################################################################################################################################################################*/
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    background: rgba(6, 23, 30, 1);
+
+}
+
+.outer_distance{
+    padding-inline: 200px;
+
+}
+
+.inner_distance{
+    margin-block: 160px;
+
+}
+
+button {
+    width: 200px;
+    height: 20px;
+}
+
+/*###########################################
+#                    Text                   #
+###########################################*/
+
 h1 {
     text-align: center;
     font-size: 56px;
@@ -22,33 +52,6 @@ h2{
     font-weight: 700;
 
     color: rgba(255, 255, 255, 1);
-}
-
-
-
-/*###########################################
-#                    Text                   #
-###########################################*/
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: "Figtree", sans-serif;
-    background: rgba(6, 23, 30, 1);
-
-}
-
-.inner_distance{
-    margin-block: 160px;
-
-}
-
-button {
-    width: 200px;
-    height: 20px;
 }
 
 
@@ -69,9 +72,9 @@ header {
     
 }
 
-.header_content_limitation {
+.header_content {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     max-width: 1440px;
     width: 100%;
@@ -96,7 +99,7 @@ main {
 
 }
 
-.main_content_limitation {
+.main_content {
     max-width: 1440px;
     width: 100%;
 }
@@ -149,7 +152,11 @@ main {
 }
 
 #dialog_close{
+    height: 36px;
+    width: 36px;
     background-image: url("icons/close_icon.svg");
+    background-color: rgba(9, 33, 42, 1);
+    border-radius: 32px;
 }
 
 #dialog_close:hover{

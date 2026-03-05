@@ -57,7 +57,7 @@ function create_dialog(index){
     return `<body class = dialog_image_body>
                 <header class = "dialog_image_header">
                     <h2>${get_dialog_title(index)}</h2>
-                    <img id = "dialog_close" onmousedown = "mouse_pressed()" onclick = "close_dialog()" src = "icons/close_icon.svg">
+                    <button id = "dialog_close" onmousedown = "mouse_pressed()" onclick = "close_dialog()" src = "icons/close_icon.svg"></Button>
                 </header>
                 <main class = "dialog_image_main">
                     <img class = "dialog_mainImage" src = "${image_array[index]}">
