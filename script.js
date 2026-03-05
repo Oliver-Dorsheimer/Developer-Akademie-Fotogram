@@ -75,9 +75,8 @@ function get_dialog_title(index){
 
     let first_letter = image_array[index].slice(4,5).toLocaleUpperCase();
     let small_letters = image_array[index].slice(5,image_array[index].length - 4);
-    let title = first_letter + small_letters;
     
-    return title
+    return first_letter + small_letters
 
 }
 
