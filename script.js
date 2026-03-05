@@ -66,9 +66,9 @@ function create_dialog(index){
                     <img class = "dialog_mainImage" src = "${image_array[index]}">
                 </main>
                 <footer class = "dialog_image_footer" onclick = "click_protection(event)">
-                    <img id = "left_arrow_button" class = "arrow_button" tabindex = "0" onclick = "arrow_backward(${(index)}, event)" onkeydown = "arrow_backward_button(${(index)}, event)" src = "icons/dialog_arrow_default.svg">
+                    <img id = "left_arrow_button" class = "arrow_button" tabindex = "0" onclick = "arrow_backward(${(index)})" onkeydown = "arrow_backward_button(${(index)}, event)" src = "icons/dialog_arrow_default.svg">
                     <div id = "dialog_page_counter">${(index + 1)} / ${(image_array.length)}</div>
-                    <img id = "right_arrow_button" class = "arrow_button" tabindex = "0" onclick = "arrow_forward(${(index)}, event)" onkeydown = "arrow_forward_button(${(index)}, event)" src = "icons/dialog_arrow_default.svg">
+                    <img id = "right_arrow_button" class = "arrow_button" tabindex = "0" onclick = "arrow_forward(${(index)})" onkeydown = "arrow_forward_button(${(index)}, event)" src = "icons/dialog_arrow_default.svg">
                 </footer>
             </body>`
     
@@ -99,8 +99,7 @@ function close_dialog_on_button(event){
     }
 };
 
-function arrow_forward(index, event){
-    event.stopPropagation();
+function arrow_forward(index){
     document.getElementById("dialog_image").innerHTML = create_dialog(index + 1);
     document.getElementById("left_arrow_button").style.transform = "rotate(180deg)";
 };
@@ -113,8 +112,7 @@ function arrow_forward_button(index, event) {
 
 };
 
-function arrow_backward(index, event){
-    event.stopPropagation();
+function arrow_backward(index){
     document.getElementById("dialog_image").innerHTML = create_dialog(index - 1);
     document.getElementById("left_arrow_button").style.transform = "rotate(180deg)";
 };
