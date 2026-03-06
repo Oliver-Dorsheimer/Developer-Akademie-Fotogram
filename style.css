@@ -10,17 +10,14 @@
 body {
     font-family: "Figtree", sans-serif;
     background-color: rgba(6, 23, 30, 1);
-
 }
 
 .outer_distance{
     padding-inline: 200px;
-
 }
 
 .inner_distance{
     margin-block: 160px;
-
 }
 
 button {
@@ -58,11 +55,9 @@ h2{
 header {
     display: flex;
     align-items: center;
-
     height: 80px;
 
     background-color: rgba(9, 33, 42, 1);
-    
 }
 
 .header_content {
@@ -76,22 +71,18 @@ header {
 .header_logo_container{
     display: flex;
     justify-content: flex-start;
-    align-items: flex-end;
-
-        
+    align-items: flex-end; 
 }
 
 .header_icon {
+    margin-right: 16px;
     height: 40px;
     width: 40px;
-
-    margin-right: 16px;
 }
 
 main {
     display: flex;
     justify-content: center;
-    
 }
 
 .main_content {
@@ -104,7 +95,6 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
-
 }
 
 .images {
@@ -115,12 +105,10 @@ main {
     border-color: rgba(18, 70, 88, 1);
     border-width: 2px;
     border-radius: 16px;
-
     object-fit: cover;
 
     transition-duration: 100ms;
     transition-timing-function: ease-out;
-    
 }
 
 .images:hover{
@@ -130,18 +118,11 @@ main {
 
 #dialog_image{
     margin: auto;
-
-}
-
-#dialog_image::backdrop {
-
-
 }
 
 .dialog_image_body{
     font-family: "Figtree", sans-serif;
     background: rgba(6, 23, 30, 1);
-
 }
 
 .dialog_image_header{
@@ -149,10 +130,6 @@ main {
     justify-content: space-between;
     padding-block: 20px;
     padding-inline: 40px;
-}
-
-#dialog_close{
-    
 }
 
 #dialog_close:hover{
@@ -164,10 +141,9 @@ main {
 }
 
 .dialog_image_main{
+    padding: 60px;
     height: 400px;
     width: auto;
-
-    padding: 60px;
 
     background: rgba(6, 23, 30, 1);
     object-fit: fill;
@@ -184,11 +160,10 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-
+    gap: 16px;
     padding-block: 20px;
 
     background: rgba(9, 33, 42, 1);
-
 }
 
 .arrow_button{
@@ -197,15 +172,6 @@ main {
 
 .arrow_button:hover{
     background-image: url("icons/dialog_arrow_default.svg");
-
-}
-
-#left_arrow_button{
-    
-}
-
-#right_arrow_button{
-
 }
 
 #dialog_page_counter{
@@ -213,10 +179,13 @@ main {
 }
 
 .main_footer {
+    position: fixed;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 160px;
+    width: 100%;
 
     background-color: rgba(9, 33, 42, 1);
     border-start-start-radius: 30%;
@@ -238,14 +207,12 @@ main {
 .footer_logo_icon{
     height: 32px;
     width: 128px;
-
 }
 
 .footer_link {
     font-size: 14px;
     font-weight: 400;
     color: rgba(153, 172, 179, 1);
-    
 }
 
 
@@ -253,16 +220,30 @@ main {
 ##############################################################                                Media                                            ####################################################################################
 #################################################################################################################################################################################################################################*/
 
+@media(min-width:1980px) {
+    .images {
+    height: 200px;
+    width: 200px;
+    }
+
+    .dialog_image_main{
+        height: 600px;
+    }
+
+    .dialog_mainImage{
+        width: 700px;
+    }
+    
+}
+
 @media(max-width:1100px){
 
 .outer_distance{
     padding-inline: 30px;
-
 }
 
 .inner_distance{
     margin-block: 60px;
-
 }
 
 /*###########################################
@@ -271,9 +252,9 @@ main {
 
 h1 {
     text-align: center;
+
     font-size: 46px;
     font-weight: 800;
-
     color: rgba(255, 255, 255, 1);
 }
 
@@ -289,18 +270,16 @@ h2{
 
 @media(max-width:720px){
 
-.outer_distance{
-    padding-inline: 0;
-
-}
-
 .dialog_mainImage{
     width: 300px;
 }
 
+#foto_container{
+    margin-bottom: 160px;
+}
+
 .dialog_image_main{
     padding: 10px;
-
 }
 
 }
@@ -310,9 +289,21 @@ h2{
         width: 250px;
     }
 
+    .dialog_image_header{
+        padding-block: 0;
+    }
+
+    .dialog_image_main{
+        height: 300px;
+    }
+
+    .dialog_image_footer{
+        padding-block: 10px;
+    }
+
     .images {
-    height: 130px;
-    width: 130px;
+        height: 130px;
+        width: 130px;
     }
 
 }
